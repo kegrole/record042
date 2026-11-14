@@ -1,0 +1,247 @@
+{
+  "cells": [
+    {
+      "cell_ref": "A1",
+      "raw_value": "note",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "note"
+    },
+    {
+      "cell_ref": "B1",
+      "raw_value": "amount",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "amount"
+    },
+    {
+      "cell_ref": "C1",
+      "raw_value": "url",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "url"
+    },
+    {
+      "cell_ref": "D1",
+      "raw_value": "extra",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "extra"
+    },
+    {
+      "cell_ref": "A2",
+      "raw_value": "=1+1",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "'=1+1"
+    },
+    {
+      "cell_ref": "B2",
+      "raw_value": "+1+1",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "2b",
+      "dde_token": null,
+      "sanitized": "'+1+1"
+    },
+    {
+      "cell_ref": "C2",
+      "raw_value": "-1+1",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "2d",
+      "dde_token": null,
+      "sanitized": "'-1+1"
+    },
+    {
+      "cell_ref": "D2",
+      "raw_value": "-12.3",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "-12.3"
+    },
+    {
+      "cell_ref": "A3",
+      "raw_value": "@SUM(1+1)*cmd|' /C calc'!A0",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "dde",
+      "trigger": "40",
+      "dde_token": "cmd",
+      "sanitized": "'@SUM(1+1)*cmd|' /C calc'!A0"
+    },
+    {
+      "cell_ref": "B3",
+      "raw_value": "=cmd|' /C calc'!A0",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "dde",
+      "trigger": "3d",
+      "dde_token": "cmd",
+      "sanitized": "'=cmd|' /C calc'!A0"
+    },
+    {
+      "cell_ref": "C3",
+      "raw_value": "=HYPERLINK(\"http://evil.example\",\"x\")",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "dde",
+      "trigger": "3d",
+      "dde_token": "HYPERLINK",
+      "sanitized": "'=HYPERLINK(\"http://evil.example\",\"x\")"
+    },
+    {
+      "cell_ref": "D3",
+      "raw_value": "-1.2E+3",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "-1.2E+3"
+    },
+    {
+      "cell_ref": "A4",
+      "raw_value": "\\t=1+1\\t=2+2",
+      "verdict": "injectable",
+      "formula_count": 2,
+      "kind": "multi_formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "\t'=1+1\t'=2+2"
+    },
+    {
+      "cell_ref": "B4",
+      "raw_value": "\\r=1+1\\r=2+2",
+      "verdict": "injectable",
+      "formula_count": 2,
+      "kind": "multi_formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "\r'=1+1\r'=2+2"
+    },
+    {
+      "cell_ref": "C4",
+      "raw_value": "=1+1",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "'=1+1"
+    },
+    {
+      "cell_ref": "D4",
+      "raw_value": "=@A1",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "'=@A1"
+    },
+    {
+      "cell_ref": "A5",
+      "raw_value": " =cmd|'/C calc'!A0",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "dde",
+      "trigger": "3d",
+      "dde_token": "cmd",
+      "sanitized": " '=cmd|'/C calc'!A0"
+    },
+    {
+      "cell_ref": "B5",
+      "raw_value": "=1+1,=2+2",
+      "verdict": "injectable",
+      "formula_count": 1,
+      "kind": "formula",
+      "trigger": "3d",
+      "dde_token": null,
+      "sanitized": "'=1+1,=2+2"
+    },
+    {
+      "cell_ref": "C5",
+      "raw_value": "plain text",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": "plain text"
+    },
+    {
+      "cell_ref": "D5",
+      "raw_value": "",
+      "verdict": "safe",
+      "formula_count": 0,
+      "kind": "safe",
+      "trigger": null,
+      "dde_token": null,
+      "sanitized": ""
+    }
+  ],
+  "findings": [
+    {
+      "rule": "dde",
+      "cell_ref": "A3",
+      "detail": "DDE token 'cmd' matched in formula segment"
+    },
+    {
+      "rule": "dde",
+      "cell_ref": "B3",
+      "detail": "DDE token 'cmd' matched in formula segment"
+    },
+    {
+      "rule": "dde",
+      "cell_ref": "C3",
+      "detail": "DDE token 'HYPERLINK' matched in formula segment"
+    },
+    {
+      "rule": "multi_formula",
+      "cell_ref": "A4",
+      "detail": "2 formula segments in one cell"
+    },
+    {
+      "rule": "multi_formula",
+      "cell_ref": "B4",
+      "detail": "2 formula segments in one cell"
+    },
+    {
+      "rule": "dde",
+      "cell_ref": "A5",
+      "detail": "DDE token 'cmd' matched in formula segment"
+    }
+  ],
+  "summary": {
+    "cells": 20,
+    "injectable": 12,
+    "safe": 8,
+    "formulas": 14,
+    "findings": 6,
+    "by_rule": {
+      "dde": 4,
+      "multi_formula": 2
+    }
+  }
+}

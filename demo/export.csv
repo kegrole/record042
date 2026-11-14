@@ -1,0 +1,5 @@
+note,amount,url,extra
+"=1+1",+1+1,-1+1,-12.3
+@SUM(1+1)*cmd|' /C calc'!A0,"=cmd|' /C calc'!A0","=HYPERLINK(""http://evil.example"",""x"")",-1.2E+3
+"	=1+1	=2+2","=1+1=2+2","=1+1",=@A1
+" =cmd|'/C calc'!A0","=1+1,=2+2",plain text,
